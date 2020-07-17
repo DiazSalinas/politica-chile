@@ -35,7 +35,7 @@ partidos
 
 import pandas as pd
 df = pd.DataFrame(list(zip(diputados, partidos, id_diputado,distrito)), 
-               columns =['senador', 'partido','id_diputado','distrito']) 
+               columns =['diputado', 'partido','id_diputado','distrito']) 
 df.head()
 
-df.to_csv('diputados.csv')
+df.to_csv('diputados.csv',index=False)
